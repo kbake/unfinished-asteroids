@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unfinished asteroids
 
 [Follow to the wiki](https://github.com/rezoner/unfinished-asteroids/wiki) where I've prepared a plot for you - our new employee.
@@ -26,3 +27,8 @@ It is a very stressful and frustrating at the beginning - but - after a short wh
 
 So - I've prepared an unfinished game - and a plot for you as a new employee. 
 Let me know does it work and what was your experience with it.
+=======
+# ballin-computing-machine
+
+Just a repo as I go through the Unfinished Asteroids project (https://github.com/rezoner/unfinished-asteroids).
+>>>>>>> 0719ab57c9a1d929e85f68cdfb8593c954084684
