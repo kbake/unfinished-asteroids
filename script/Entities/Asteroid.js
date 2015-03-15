@@ -39,6 +39,8 @@ ENGINE.Asteroid.prototype = {
 
       this.collection.remove(this);
 
+      app.game.players[0].score += 1;
+
       app.playSound("asteroid-crush");
     }
 
