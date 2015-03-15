@@ -31,11 +31,15 @@ ENGINE.Asteroid.prototype = {
 
     this.hp -= data.damage;
 
+    //app.playSound("asteroid-hit");
+
     if (this.hp <= 0) {
 
       if (this.splits) this.split();
 
       this.collection.remove(this);
+
+      //app.playSound("asteroid-crush");
     }
 
   },
