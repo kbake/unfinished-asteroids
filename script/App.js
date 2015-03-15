@@ -10,9 +10,9 @@ var app = playground({
   create: function() {
 
     this.loadImages("spritesheet");
-    this.loadSound("asteroid-crush");
-    this.loadSound("asteroid-hit");
-    this.loadSound("shoot");
+    this.loadSounds("asteroid-crush");
+    this.loadSounds("asteroid-hit");
+    this.loadSounds("shoot");
     
   },
 

@@ -83,7 +83,6 @@ app.game = {
     switch (e.key) {
       case "space":
         this.players[0].shooting = true;
-        //this.playSound("shoot");
         break;
       case "left":
         this.players[0].left = true;

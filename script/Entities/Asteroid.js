@@ -31,7 +31,7 @@ ENGINE.Asteroid.prototype = {
 
     this.hp -= data.damage;
 
-    //app.playSound("asteroid-hit");
+    app.playSound("asteroid-hit");
 
     if (this.hp <= 0) {
 
@@ -39,7 +39,7 @@ ENGINE.Asteroid.prototype = {
 
       this.collection.remove(this);
 
-      //app.playSound("asteroid-crush");
+      app.playSound("asteroid-crush");
     }
 
   },
