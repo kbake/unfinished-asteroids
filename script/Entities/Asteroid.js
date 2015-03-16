@@ -43,11 +43,22 @@ ENGINE.Asteroid.prototype = {
 
       app.playSound("asteroid-crush");
 
-      // create coin
-      var coin = app.game.entities.add(ENGINE.Coin, {
-        x: this.x,
-        y: this.y
-      });
+      // 20% chance to get a health powerup
+      var chance = (Math.random() * 5 | 0) + 1;
+      if( chance < 5 ) {
+        // create coin
+        var coin = app.game.entities.add(ENGINE.Coin, {
+          x: this.x,
+          y: this.y
+        });
+      }
+      else {
+        // create health powerup
+        var healthPowerup = app.game.entities.add(ENGINE.HealthPowerup, {
+          x: this.x,
+          y: this.y
+        });
+      }
     }
 
   },
