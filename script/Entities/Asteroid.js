@@ -42,6 +42,12 @@ ENGINE.Asteroid.prototype = {
       app.game.players[0].score += 1;
 
       app.playSound("asteroid-crush");
+
+      // create coin
+      var coin = app.game.entities.add(ENGINE.Coin, {
+        x: this.x,
+        y: this.y
+      });
     }
 
   },
